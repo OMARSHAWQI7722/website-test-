@@ -1724,4 +1724,55 @@ html { scroll-behavior: smooth; }
 .logo-white{
     color: #ffffff;
 }
+/* ================= MOBILE FIX ================= */
 
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    nav ul{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1{
+        font-size: 55px !important;
+        line-height: 1.1;
+    }
+
+    .hero-content p{
+        font-size: 18px !important;
+        padding: 0 15px;
+    }
+
+    .main-btn{
+        display: block;
+        width: 90%;
+        max-width: 320px;
+        margin: 12px auto;
+    }
+
+    .social-icons{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px){
+
+    .hero-content h1{
+        font-size: 42px !important;
+    }
+
+    .hero-content p{
+        font-size: 16px !important;
+    }
+
+    .logo{
+        font-size: 26px;
+    }
+}
